@@ -1,0 +1,121 @@
+.background {
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 10px solid rgba(0, 0, 255, 0.4);
+  color: #ffffff;
+
+  background-color: #303030;
+  background-image: linear-gradient();
+
+  background-size: cover;
+}
+
+.container {
+  width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.header-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+}
+.nav-link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14286;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+.section-top {
+  padding: 60px;
+}
+.section-top-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 50px;
+}
+.orange {
+  color: var(--orange);
+}
+.list-top {
+  display: flex;
+  gap: 16px;
+}
+.item-top {
+  width: calc((100% - 32px) / 3);
+}
+.item-top img {
+  border-radius: 15px 15px 0 0;
+}
+.cont-title-top {
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0 0 15px 15px;
+}
+.sub-title-top {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center;
+}
+.order-form {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.order-form label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form input {
+  padding: 4px;
+}
+
+.submit-btn {
+  display: inline-flex;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #009688;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 0 rgba(33, 33, 33, 0.3);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #00796b;
+}
+.submit-btn:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+  box-shadow: none;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practyka</title>
+    <title>Simply Chocolate</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -22,11 +22,11 @@
   <body>
     <!--==============HEADER===========-->
 
-    <header class="header-section">
+    <header class="header-section hidden">
       <div class="container">
         <a class="logo" href="./index.html"
           ><span class="logo-accent">SIMPLY</span> CHOCOLATE</a
-        >
+        >&nbsp
         <nav class="nav-menu">
           <ul class="nav-menu-links">
             <li class="nav-link"><a href=""></a>Home</li>
@@ -71,16 +71,22 @@
     <main>
       <!--==============ONE SECTION===========-->
 
-      <section class="start-page-section">
-        <div class="container">
+      <section class="start-page-section hidden">
+        <div class="container start-container">
           <h1 class="main-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
           <ul class="start-menu">
-            <li class="start-item"><button type="button">Buy now</button></li>
             <li class="start-item">
-              <button type="button">How it's made</button>
+              <button class="button-start buy-btn" type="button">
+                Buy now
+              </button>
+            </li>
+            <li class="start-item">
+              <button class="button-start made-btn" type="button">
+                How it's made
+              </button>
             </li>
           </ul>
           <a href="#scroll">scroll down <img src="" alt="" /></a>
@@ -91,7 +97,7 @@
       <!--==============TWO SECTION===========-->
 
       <section class="benefits-section">
-        <div class="container">
+        <div class="container benefit-container">
           <h2 hidden>Benefits</h2>
           <ul class="benefit-menu">
             <li class="benefit-list">
@@ -130,7 +136,7 @@
 
       <!--==============THREE SECTION===========-->
 
-      <section class="ingridients-section">
+      <section class="ingridients-section hidden">
         <div class="container">
           <h2 class="ingridients-title">
             It all adds up to one exceptional
@@ -192,7 +198,7 @@
 
       <!--==============FOUR SECTION===========-->
 
-      <section class="made-section">
+      <section class="made-section hidden">
         <div class="container">
           <h2 class="made-title">
             How it's <span class="made-accent">made</span>?
@@ -230,7 +236,7 @@
 
       <!--==============FIVE SECTION===========-->
 
-      <section class="products-section">
+      <section class="products-section hidden">
         <div class="container">
           <h2 class="product-title">
             Our <span class="prod-accent">products</span>
@@ -316,6 +322,29 @@
           <h2 class="section-top-title">
             <span class="orange">Top</span> sellers
           </h2>
+
+          <picture>
+            <source
+              srcset="
+                ./img/mobile/top-nut_mob.jpg    1x,
+                ./img/mobile/top-nut_mob@2x.jpg 2x
+              "
+              media="(min-width: 1158px)"
+            />
+            <source srcset="1x, 2x" media="(min-width: 768px)" />
+            <source srcset="1x, 2x" media="(max-width: 767px)" />
+            <img
+              src="./img/mobile/top-nut_mob.jpg"
+              width=""
+              height=""
+              alt="CHOCOLATE WITH NUTS"
+            />
+          </picture>
+
+          <div class="cont-title-top">
+            <h3 class="sub-title-top">CHOCOLATE WITH NUTS</h3>
+          </div>
+          <!--
           <ul class="list-top">
             <li class="item-top">
               <img
@@ -351,11 +380,11 @@
               </div>
             </li>
           </ul>
-        </div>
+        --></div>
       </section>
 
       <!--==============SEVEN SECTION===========-->
-      <section class="review-section">
+      <section class="review-section hidden">
         <div class="container">
           <h2 class="review-titel">
             <span class="rev-accent">Chocolate</span> is loved
@@ -405,7 +434,7 @@
 
     <!--==========================FOOTER SECTION===================================-->
 
-    <footer id="scroll" class="footer-section">
+    <footer id="scroll" class="footer-section hidden">
       <div class="container">
         <div class="top-footer-container">
           <h2 class="footer-title">

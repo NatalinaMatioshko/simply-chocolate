@@ -10,6 +10,15 @@
   --marker-border: #eceded;
   --font-family: "Montserrat", sans-serif;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
 
 body {
   font-family: var(--font-family);
@@ -22,6 +31,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
   margin: 0;
 }
@@ -36,39 +47,143 @@ ol {
   margin: 0;
   list-style-type: none;
 }
+button {
+  color: currentColor;
+  cursor: pointer;
+}
+
+/* ========================================================================================================================================================
+common
+======================================================================================================================================================== */
+
 .container {
-  width: 1168px;
+  max-width: 335px;
   padding: 0 16px;
   margin: 0 auto;
 }
 
-.header-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
-.nav-menu {
-  display: flex;
-  align-items: center;
-  margin-right: 90px;
-}
-.nav-link {
-  display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14286;
-  letter-spacing: -0.02em;
-  color: #111;
+@media screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+    padding: 0 15px;
+  }
 }
+
+/* ==============================================
+ONE SECTION
+=================================================== */
+.start-page-section {
+  height: 620px;
+  max-width: 335px;
+  border-radius: 30px;
+
+  background-color: var(--black);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../img/mobile/hero-bg_mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  text-align: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .section-first {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../img/mobile/hero-bg_mob@2x.jpg);
+  }
+}
+.start-container {
+  max-width: 335px;
+}
+.main-title {
+  height: 72px;
+  width: 293px;
+  padding-top: 395px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  text-align: left;
+}
+
+.start-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.start-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+  gap: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+}
+.button-start {
+  flex-direction: row;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 120px;
+  height: 41px;
+  justify-content: center;
+  align-items: center;
+}
+.buy-btn {
+  background: var(--orange);
+  border: none;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 120px;
+}
+.made-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 159px;
+}
+
+/* ========================================================================================================================================================
+section top
+======================================================================================================================================================== */
+
 .section-top {
+  min-width: 335px;
+  border-radius: 15px 15px 0 0;
+
+  height: 464px;
   padding: 60px;
 }
 .section-top-title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16667;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
@@ -78,29 +193,7 @@ ol {
 .orange {
   color: var(--orange);
 }
-.list-top {
-  display: flex;
-  gap: 16px;
-}
-.item-top {
-  width: calc((100% - 32px) / 3);
-}
-.item-top img {
-  border-radius: 15px 15px 0 0;
-}
-.cont-title-top {
-  padding: 28px 0;
-  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
-  border-left: 1px solid rgba(17, 17, 17, 0.1);
-  border-right: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 0 0 15px 15px;
-}
-.sub-title-top {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.33333;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: var(--black);
-  text-align: center;
-}
+
+
+
+$FILE = $GET_HTML.Links | Select-Object @{Label='href';Expression={@{$true=$_.href}[$_.href.EndsWith('win64.exe')]}} | Select-Object -ExpandProperty href
