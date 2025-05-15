@@ -1,3 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+
 .background {
   width: 900px;
   height: 400px;
