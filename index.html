@@ -17,7 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/old-style.css" />
   </head>
   <body>
     <!--==============HEADER===========-->
@@ -72,33 +73,26 @@
     <main>
       <!--==============HERO SECTION===========-->
 
-      <section class="start-page-section hidden">
-        <div class="container start-container">
+      <section class="hero-section hidden">
+        <div class="container hero-container">
           <h1 class="main-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
 
-          <ul class="start-menu">
-            <li class="start-item">
-              <button class="button-start buy-btn" type="button">
-                Buy now
-              </button>
-            </li>
-            <li class="start-item">
-              <a class="button-start made-btn" href="">How it's made</a>
-            </li>
-          </ul>
-          <a href="#scroll">scroll down <img src="" alt="" /></a>
-          <span></span>
+          <div class="hero-content-wrapper">
+            <button class="buy-now-btn" type="button">Buy now</button>
+            <a class="how-made-link" href="#how-made">How it's made</a>
+            <a class="scroll-down-link" href="#scroll">scroll down<svg class="hero-scroll" width="38" height="38"><use href="./img/sprite.svg#scroll"><use></svg></a>
+        </div>
         </div>
       </section>
 
       <!--==============BENEFITS SECTION===========-->
 
-      <section class="benefits-section hidden">
+      <section id="benefits" class="benefits-section hidden">
         <div class="container benefit-container">
-          <h2 hidden>Our benefits</h2>
+          <h2 class visually-hidden>Our benefits</h2>
           <ul class="benefit-menu">
             <li class="benefit-list">
               <h3 class="benefit-title">Unsurpassed taste</h3>
@@ -136,11 +130,11 @@
 
       <!--==============ingridients SECTION===========-->
 
-      <section class="ingridients-section hidden">
+      <section class="ingridients-section section-paddings hidden">
         <div class="container">
-          <h2 class="ingridients-title">
+          <h2 class="section-title ingridients-title">
             It all adds up to one exceptional
-            <span class="ing-accent">taste</span> sensation
+            <span class="accent-color">taste</span> sensation
           </h2>
 
           <ul class="ingridients-menu">
@@ -193,15 +187,18 @@
               </div>
             </li>
           </ul>
+
+      
+
         </div>
       </section>
 
       <!--==============made SECTION===========-->
 
-      <section id="how-made" class="made-section hidden">
+      <section id="how-made" class="made-section hidden section-paddings">
         <div class="container">
-          <h2 class="made-title">
-            How it's <span class="made-accent">made</span>?
+          <h2 class="section-title">
+            How it's <span class="accent-color">made</span>?
           </h2>
           <img src="./img/made-chock.jpg" alt="Made chocolate" />
           <div class="made-container">
@@ -236,10 +233,10 @@
 
       <!--==============products SECTION===========-->
 
-      <section class="products-section hidden">
+      <section class="products-section section-paddings hidden">
         <div class="container">
-          <h2 class="product-title">
-            Our <span class="prod-accent">products</span>
+          <h2 class="section-title">
+            Our <span class="accent-color">products</span>
           </h2>
           <ul class="product-menu">
             <li class="product-list">
@@ -317,12 +314,11 @@
         </div>
       </section>
       <!--==============top sell SECTION===========-->
-      <section class="section-top hidden">
+      <section class="section-top section-paddings hidden">
         <div class="container">
-          <h2 class="section-top-title">
-            <span class="orange">Top</span> sellers
+          <h2 class="section-title">
+            <span class="accent-color">Top</span> sellers
           </h2>
-
           <picture>
             <source
               srcset="
@@ -384,13 +380,13 @@
       </section>
 
       <!--==============REVIEWS SECTION===========-->
-      <section id="reviews" class="review-section hidden">
+      <section id="reviews" class="review-section section-paddings ">
         <div class="container">
-          <h2 class="review-titel">
-            <span class="rev-accent">Chocolate</span> is loved
+          <h2 class="section-title">
+            <span class="accent-color">Chocolate</span> is loved
           </h2>
 
-          <ul class="review-menu">
+          <ul class="review-menu list">
             <li class="review-list">
               <div class="rev-con">
                 <img
@@ -454,7 +450,7 @@
             </li>
           </ul>
 
-          <button class="rev-btn" type="button">Leave a review</button>
+          <button class="leave-review-btn" type="button">Leave a review</button>
         </div>
       </section>
     </main>
