@@ -3,28 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+
 .hidden {
   display: none;
-}
-
-ul,
-ol {
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-a {
-  text-decoration: none;
-}
-button {
-  cursor: pointer;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  color: #111;
-  background: #fff;
 }
 
 h1,
@@ -39,9 +20,33 @@ p {
   margin-bottom: 0;
 }
 
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
 img {
   display: block;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+  background-color: #fafafa;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -55,25 +60,17 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.background {
-  width: 900px;
-  height: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 10px solid rgba(0, 0, 255, 0.4);
-  color: #ffffff;
-
-  background-color: #303030;
-  background-image: linear-gradient();
-
-  background-size: cover;
-}
 
 .container {
   width: 1168px;
   padding: 0 16px;
   margin: 0 auto;
 }
+
+.accent-color {
+  color: #fd9222;
+}
+
 .section-title {
   font-size: 24px;
   font-weight: 600;
@@ -83,38 +80,40 @@ img {
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+
 .section-paddings {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.accent-color {
-  color: #fd9222;
+/* ===========  HEAD SECTION   ====================== */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-/* ===========  head SECTION   ====================== */
+
 .logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
 }
+
+.nav-menu {
+  display: flex;
+  column-gap: 24px;
+}
+
 .logo-accent {
   font-style: italic;
 }
+
 .header-section {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.nav-menu {
-  display: flex;
-  align-items: center;
-  /* margin-right: 90px; */
-  justify-content: space-between;
-}
-.nav-menu-links {
-  display: flex;
-  column-gap: 24px;
-}
+
 .nav-link {
   display: block;
   padding-top: 12px; /*для легшого наведення на посилання */
@@ -126,6 +125,10 @@ img {
   letter-spacing: -0.02em;
   color: #111;
 }
+.nav-link:hover,
+.nav-link:focus {
+  color: #fd9222;
+}
 /* ===========  HERO SECTION   ====================== */
 
 .hero-section {
@@ -135,6 +138,7 @@ img {
   background-color: #1e1823;
   border-radius: 30px;
 }
+
 .hero-container {
   padding-top: 381px;
   padding-bottom: 40px;
@@ -207,12 +211,101 @@ img {
   color: #fd9222;
 }
 
-/*
+/*==========  BENEFITS SECTION  =========================== */
+.benefits-section {
+  margin-top: 72px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1e1823;
+  color: #ffffff;
+}
+.benefits-container {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+.benefit-menu {
+  display: flex;
+  column-gap: 88px;
+}
 
+.benefits-list {
+  width: calc((100% - 2 * 88px) / 3);
+}
+.benefit-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
 
+.benefit-page {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
 
-*/
-/* ===========  two  =========================== */
+/*==========  ingridients SECTION  =========================== */
+.ingredients-title {
+  max-width: 412px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+
+.ingredients-description {
+  max-width: 486px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.ingredients-menu {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 19px;
+}
+
+.ingredients-list {
+  width: calc((100% - 57px) / 4);
+  padding: 32px 28px;
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+}
+
+.ingredients-list:nth-child(4n + 1) {
+  color: #ffffff;
+  background-color: #fd9222;
+}
+
+.ingredients-list-item:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.ingredients-list:nth-child(4n - 1) {
+  color: #ffffff;
+  background-color: #1e1823;
+  border-color: #1e1823;
+}
+
+.ingredients-list-img {
+  margin-bottom: 36px;
+}
+
+.ingredients-list-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+/*==========  how-made SECTION  =========================== */
+/*==========  ingridients SECTION  =========================== */
+/*==========  ingridients SECTION  =========================== */
 
 .section-top {
   padding: 60px;
@@ -298,8 +391,7 @@ img {
 .review-section {
   padding-bottom: 100px;
 }
-.leave-review-btn {
-}
+
 .review-menu {
   display: flex;
   column-gap: 28px;
@@ -312,4 +404,39 @@ img {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+}
+.rev-avatar {
+  margin-bottom: 18px;
+}
+.sub-review-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.review-page {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.leave-review-btn {
+  display: block;
+  min-width: 222px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  border: 1px solid #fd9222;
+  color: #111111;
+  background-color: #ffffff;
+}
+.leave-review-btn:hover,
+.leave-review-btn:focus {
+  color: #ffffff;
+  background-color: #fd9222;
 }
