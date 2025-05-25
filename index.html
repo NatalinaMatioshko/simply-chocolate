@@ -240,40 +240,48 @@
           <h2 class="section-title">
             How it's <span class="accent-color">made</span>?
           </h2>
-          <img src="./img/made-chock.jpg" alt="Made chocolate" />
-          <div class="made-container">
-            <h3 class="sub-made-title">
-              Try our chocolates today and discover the perfect balance of
-              flavor
-            </h3>
-            <ul class="made-menu">
-              <li class="made-list">
-                Heat the milk in a saucepan without bringing it to a boil. Add
-                sugar and cocoa powder.
-              </li>
-              <li class="made-list">
-                At the same time, prepare a water bath. Melt the butter on it.
-              </li>
-              <li class="made-list">
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly
-                with a silicone spatula so that the mass becomes uniform and
-                silky.
-              </li>
-              <li class="made-list">
-                Heat the mixture over low heat, letting it barely boil.
-              </li>
-              <li class="made-list">
-                Pour the chocolate into special containers (can be replaced with
-                ice molds). Allow to cool and harden.
-              </li>
-            </ul>
+          <div class="how-made-content-wrapper">
+            <picture class="how-made-img">
+              <source srcset="./img/how-made/how-made-desk.png 1x,./img/how-made/how-made-desk@2x.png 2x" media="(min-width: 1158px)" />
+              <source srcset="./img/how-made/how-made-tab.png 1x, ./img/how-made/how-made-tab@2x.png 2x" media="(min-width: 768px)" />
+              <source srcset="./img/how-made/how-made-mob.png 1x, ./img/how-made/how-made-mob@2x.png 2x" media="(max-width: 767px)" />
+              <img src="./img/how-made/how-made-desk.png" width="600" height="400" alt="Made chocolate" />
+            </picture>
+            
+            <div class="made-container">
+              <h3 class="sub-made-title how-made-title">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ul class="made-menu">
+                <li class="made-list">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+                <li class="made-list">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="made-list">
+                  "Mix" the milk mixture and already liquid butter. Mix thoroughly
+                  with a silicone spatula so that the mass becomes uniform and
+                  silky.
+                </li>
+                <li class="made-list">
+                  Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="made-list">
+                  Pour the chocolate into special containers (can be replaced with
+                  ice molds). Allow to cool and harden.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       <!--==============products SECTION===========-->
 
-      <section class="products-section section-paddings hidden">
+      <section class="products-section section-paddings ">
         <div class="container">
           <h2 class="section-title">
             Our <span class="accent-color">products</span>
@@ -281,7 +289,7 @@
           <ul class="product-menu">
             <li class="product-list">
               <div class="prod-cont">
-                <img src="./image/img-1.jpg" alt="Orange" />
+                <img class="product-img" srcset="./img/products/desk/choc-1.png 1x, ./img/products/desk/choc-1@2x.png 2x" src="./img/products/desk/choc-1.png" width="230" height="201" alt="Orange">
                 <h3 class="sub-product-title">Orange</h3>
                 <p class="product-page">Dark chocolate</p>
                 <button class="product-btn" type="button">45 UAH</button>
@@ -290,7 +298,7 @@
 
             <li class="product-list">
               <div class="prod-cont">
-                <img src="./image/img-2.jpg" alt="Apple&Cranberry" />
+                <img class="product-img" srcset="./img/products/desk/choc-2.png 1x, ./img/products/desk/choc-2@2x.png 2x" src="./img/products/desk/choc-2.png" width="230" height="201" alt="Apple&Cranberry">
                 <h3 class="sub-product-title">Apple&Cranberry</h3>
                 <p class="product-page">Milk chocolate</p>
                 <button class="product-btn" type="button">50 UAH</button>
@@ -299,7 +307,7 @@
 
             <li class="product-list">
               <div class="prod-cont">
-                <img src="./image/img-3.jpg" alt="Lime&Sea salt" />
+                <img class="product-img" srcset="./img/products/desk/choc-3.png 1x, ./img/products/desk/choc-3@2x.png 2x" src="./img/products/desk/choc-3.png" width="230" height="201" alt="Lime&Sea salt">
                 <h3 class="sub-product-title">Lime&Sea salt</h3>
                 <p class="product-page">Dark chocolate</p>
                 <button class="product-btn" type="button">66 UAH</button>
@@ -308,7 +316,7 @@
 
             <li class="product-list">
               <div class="prod-cont">
-                <img src="./image/img-4.jpg" alt="Pineapple" />
+                <img class="product-img" srcset="./img/products/desk/choc-4.png 1x, ./img/products/desk/choc-4@2x.png 2x" src="./img/products/desk/choc-4.png" width="230" height="201" alt="Pineapple">
                 <h3 class="sub-product-title">Pineapple</h3>
                 <p class="product-page">Dark chocolate</p>
                 <button class="product-btn" type="button">54 UAH</button>
@@ -317,7 +325,7 @@
 
             <li class="product-list">
               <div class="prod-cont">
-                <img src="./image/img-5.jpg" alt="Classic" />
+                <img class="product-img" srcset="./img/products/desk/choc-5.png 1x, ./img/products/desk/choc-5@2x.png 2x" src="./img/products/desk/choc-5.png" width="230" height="201" alt="Classic Milk chocolate">
                 <h3 class="sub-product-title">Classic</h3>
                 <p class="product-page">Milk chocolate</p>
                 <button class="product-btn" type="button">45 UAH</button>
@@ -326,7 +334,7 @@
 
             <li class="product-list">
               <div class="prod-cont">
-                <img src="./image/img-6.jpg" alt="Honey" />
+                <img class="product-img" srcset="./img/products/desk/choc-6.png 1x, ./img/products/desk/choc-6@2x.png 2x" src="./img/products/desk/choc-6.png" width="230" height="201" alt="Honey">
                 <h3 class="sub-product-title">Honey</h3>
                 <p class="product-page">Milk chocolate</p>
                 <button class="product-btn" type="button">50 UAH</button>
@@ -335,7 +343,7 @@
 
             <li class="product-list">
               <div class="prod-cont">
-                <img src="./image/img-7.jpg" alt="Roasted fruits" />
+                <img class="product-img" srcset="./img/products/desk/choc-7.png 1x, ./img/products/desk/choc-7@2x.png 2x" src="./img/products/desk/choc-7.png" width="230" height="201" alt="Roasted fruits">
                 <h3 class="sub-product-title">Roasted fruits</h3>
                 <p class="product-page">Dark chocolate</p>
                 <button class="product-btn" type="button">66 UAH</button>
@@ -344,7 +352,7 @@
 
             <li class="product-list">
               <div class="prod-cont">
-                <img src="./image/img-8.jpg" alt="Classic" />
+                <img class="product-img" srcset="./img/products/desk/choc-8.png 1x, ./img/products/desk/choc-8@2x.png 2x" src="./img/products/desk/choc-8.png" width="230" height="201" alt="Classic White chocolate">
                 <h3 class="sub-product-title">Classic</h3>
                 <p class="product-page">White chocolate</p>
                 <button class="product-btn" type="button">54 UAH</button>

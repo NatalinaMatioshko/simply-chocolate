@@ -304,8 +304,55 @@ body {
   text-transform: uppercase;
 }
 /*==========  how-made SECTION  =========================== */
-/*==========  ingridients SECTION  =========================== */
-/*==========  ingridients SECTION  =========================== */
+.how-made-content-wrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.made-container {
+  flex-grow: 1;
+  padding: 32px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.how-made-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  margin-bottom: 28px;
+}
+
+.made-menu {
+  padding-right: 26px;
+}
+
+.made-list {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.made-list:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+/*==========  products SECTION  =========================== */
+
+.product-btn {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 8px 20px;
+  min-width: 94px;
+  height: 33px;
+  background: #fafafa;
+}
+.product-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*==========  top sell SECTION  =========================== */
 
 .section-top {
   padding: 60px;
