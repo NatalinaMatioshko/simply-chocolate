@@ -23,7 +23,7 @@
   </head>
   <body>
     <!--==============HEADER===========-->
-    <header class="header-section hidden">
+    <header class="header-section ">
       <div class="container">
         <nav class="nav-menu">
           <a class="logo" href="./index.html"
@@ -74,7 +74,7 @@
     <main>
       <!--==============HERO SECTION===========-->
 
-      <section class="hero-section hidden">
+      <section class="hero-section ">
         <div class="container hero-container">
           <h1 class="main-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -91,9 +91,9 @@
 
       <!--==============BENEFITS SECTION===========-->
 
-      <section id="benefits" class="benefits-section hidden">
+      <section id="benefits" class="benefits-section ">
         <div class="container benefit-container">
-          <h2 class visually-hidden>Our benefits</h2>
+          <h2 class="visually-hidden">Our benefits</h2>
           <ul class="benefit-menu">
             <li class="benefit-list">
               <h3 class="benefit-title">Unsurpassed taste</h3>
@@ -131,7 +131,7 @@
 
       <!--==============ingridients SECTION===========-->
 
-      <section class="ingridients-section section-paddings hidden">
+      <section class="ingridients-section section-paddings ">
         <div class="container">
           <h2 class="section-title ingridients-title">
             It all adds up to one exceptional
@@ -235,7 +235,7 @@
 
       <!--==============how-made SECTION===========-->
 
-      <section id="how-made" class="made-section hidden section-paddings">
+      <section id="how-made" class="made-section  section-paddings">
         <div class="container">
           <h2 class="section-title">
             How it's <span class="accent-color">made</span>?
@@ -362,69 +362,48 @@
         </div>
       </section>
       <!--==============top sell SECTION===========-->
-      <section class="section-top section-paddings hidden">
+      <section class="section-top section-paddings ">
         <div class="container">
           <h2 class="section-title">
             <span class="accent-color">Top</span> sellers
           </h2>
-          <picture>
-            <source
-              srcset="
-                ./img/mobile/top-nut_mob.jpg    1x,
-                ./img/mobile/top-nut_mob@2x.jpg 2x
-              "
-              media="(min-width: 1158px)"
-            />
-            <source srcset="1x, 2x" media="(min-width: 768px)" />
-            <source srcset="1x, 2x" media="(max-width: 767px)" />
-            <img
-              src="./img/mobile/top-nut_mob.jpg"
-              width=""
-              height=""
-              alt="CHOCOLATE WITH NUTS"
-            />
-          </picture>
-
-          <div class="cont-title-top">
-            <h3 class="sub-title-top">CHOCOLATE WITH NUTS</h3>
-          </div>
-          <!--
+         
           <ul class="list-top">
             <li class="item-top">
-              <img
-                src="./img/img-1.jpg"
-                alt="CHOCOLATE WITH NUTS"
-                width="368"
-                height="464"
-              />
+              <picture class="top-sel-img">
+                <source srcset="./img/top-sell/choc-nut-desk.png 1x,./img/top-sell/choc-nut-desk@2x.png 2x" media="(min-width: 1158px)" />
+                <source srcset="./img/top-sell/choc-nut-tab.png 1x, ./img/top-sell/choc-nut-tab@2x.png 2x" media="(min-width: 768px)" />
+                <source srcset="./img/top-sell/choc-nut-mob.png 1x, ./img/top-sell/choc-nut-mob@2x.png 2x" media="(max-width: 767px)" />
+                <img src="./img/top-sell/choc-nut-desk.png" width="368" height="464" alt="CHOCOLATE WITH NUTS" />
+              </picture>
               <div class="cont-title-top">
                 <h3 class="sub-title-top">CHOCOLATE WITH NUTS</h3>
               </div>
             </li>
             <li class="item-top">
-              <img
-                src="./img/img-2.jpg"
-                alt="CHOCOLATE WITH FRUITS"
-                width="368"
-                height="464"
-              />
+              <picture class="top-sel-img">
+                <source srcset="./img/top-sell/choc-fruit-desk.png 1x, ./img/top-sell/choc-fruit-desk@2x.png 2x" media="(min-width: 1158px)" />
+                <source srcset="./img/top-sell/choc-fruit-tab.png 1x, ./img/top-sell/choc-fruit-tab@2x.png 2x" media="(min-width: 768px)" />
+                <source srcset=" 1x, 2x" media="(max-width: 767px)" />
+                <img src="./img/top-sell/choc-fruit-desk.png" width="368" height="464" alt="CHOCOLATE WITH FRUITS" />
+              </picture>
               <div class="cont-title-top">
                 <h3 class="sub-title-top">CHOCOLATE WITH FRUITS</h3>
               </div>
             </li>
             <li class="item-top">
-              <img
-                src="./img/img-3.jpg"
-                alt="DARK CHOCOLATE"
-                width="368"
-                height="464"
-              />
+              <picture class="top-sel-img">
+                <source srcset="./img/top-sell/dark-choc-desk.png 1x,./img/top-sell/dark-choc-desk@2x.png 2x" media="(min-width: 1158px)" />
+                <source srcset=" 1x, 2x" media="(min-width: 768px)" />
+                <source srcset=" 1x, 2x" media="(max-width: 767px)" />
+                <img src="./img/top-sell/dark-choc-desk.png" width="368" height="464" alt="DARK CHOCOLATE" />
+              </picture>
               <div class="cont-title-top">
                 <h3 class="sub-title-top">DARK CHOCOLATE</h3>
               </div>
             </li>
           </ul>
-        --></div>
+        </div>
       </section>
 
       <!--==============REVIEWS SECTION===========-->
@@ -508,7 +487,7 @@
 
     <!--==========================FOOTER SECTION===================================-->
 
-    <footer id="scroll" class="footer-section hidden">
+    <footer id="scroll" class="footer-section ">
       <div class="container">
         <div class="top-footer-container">
           <h2 class="footer-title">

@@ -354,9 +354,9 @@ body {
 
 /*==========  top sell SECTION  =========================== */
 
-.section-top {
+/* .section-top {
   padding: 60px;
-}
+} */
 .section-top-title {
   font-weight: 600;
   font-size: 24px;
@@ -375,7 +375,7 @@ body {
 .item-top {
   width: calc((100% - 32px) / 3);
 }
-.item-top img {
+.item-top {
   border-radius: 15px 15px 0 0;
 }
 .cont-title-top {
