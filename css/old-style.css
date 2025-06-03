@@ -162,7 +162,7 @@ body {
       rgba(30, 24, 35, 0.4),
       rgba(30, 24, 35, 0.4)
     ),
-    url("../images/hero/bg.jpg");
+    url("../img/hero/hero-bghero_desk.jpg");
   background-size: cover;
   background-color: #303030;
 }
