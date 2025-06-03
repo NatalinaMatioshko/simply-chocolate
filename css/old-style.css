@@ -94,17 +94,28 @@ body {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
 }
-
+.page-logo-icon {
+  margin-left: 4px;
+}
 .nav-menu {
   display: flex;
   column-gap: 24px;
 }
-
+.soc-media-menu {
+  display: flex;
+}
+.soc-link {
+  display: block;
+  stroke: #111;
+  fill: none;
+}
 .logo-accent {
   font-style: italic;
 }
